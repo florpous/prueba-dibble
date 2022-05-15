@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --img-login: url(https://indepaz.org.co/wp-content/uploads/2021/05/diana-mendoza.png);
+    --font: "poppins", "tahoma";
+    --color-botones: #DD636E;
+    --img-insurance: url(https://images.vexels.com/media/users/3/208833/isolated/preview/f197ad94b57cdbf7d2b726d8ca4db99d-hospital-de-corazon-salvavidas.png);
+    --img-car: url(https://cdn-icons.flaticon.com/png/512/1864/premium/1864007.png?token=exp=1652639818~hmac=55a3ccf0a6b83a2ed47f905d61ee04ba);
+    --img-salud: url(https://cdn-icons-png.flaticon.com/512/1863/1863367.png);
+    --img-life: url(https://cdn-icons.flaticon.com/png/512/3196/premium/3196808.png?token=exp=1652646029~hmac=f6f8e7ab89aa6247fbaaebedf2ddb07d);
+    --img-travel: url(https://cdn-icons.flaticon.com/png/512/826/premium/826070.png?token=exp=1652646335~hmac=cecea1c566c8ab0567f7d80e458b5293)
+}
+
+body {
+    font-family: var(--font);
+    background-color: rgba(119, 136, 153, 0.13);
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    /* background-color: red; */
+}
+
+.login-img {
+    background-image: var(--img-login);
+    /* display: block; */
+    /* background-image: var(--img-login) ; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+}
+
+.container-texto h1 {
+    margin-left: 20px;
+    margin-bottom: auto;
+}
+
+.container-texto h3 {
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
+.container-insurance {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    max-width: 580px;
+    height: 200px;
+    background-color: #140035;
+    margin-left: 20px;
+    border-radius: 15px;
+}
+
+.insurance-texto h3 {
+    margin-top: 10px;
+    margin-left: 20px;
+    color: var(--color-botones);
+    margin-bottom: 10px;
+}
+
+.insurance-texto h2 {
+    margin-left: 20px;
+    color: white;
+    max-width: 250px;
+    /* background-color: aqua; */
+}
+
+.insurance-texto button {
+    height: 30px;
+    width: 130px;
+    margin-top: 20px;
+    margin-left: 40px;
+    background-color:var(--color-botones);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-family: var(--font);
+}
+
+.img-insurance {
+    /* background-color: aqua; */
+    background-image: var(--img-insurance);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 100%;
+}
+
+.instruciones-insurance {
+    display: flex;
+    justify-content: space-between;
+    max-width: 580px;
+    /* background-color: aqua; */
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.instruciones-insurance button {
+    background-color: var(--color-botones);
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-family: var(--font);
+    width: 90px;
+    border-radius: 15px;
+}
+
+.car-health {
+    display: flex;
+    justify-content: space-between;
+    max-width: 580px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.car-texto-img {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.432);
+    height: 80px;
+    width: 200px;
+    border-radius: 15px;
+}
+
+.car-img {
+/* background-color: aqua; */
+background-image: var(--img-car);
+background-size: contain;
+background-position: left;
+background-repeat: no-repeat;
+width: 50%;
+height:100%;
+}
+
+.car-texto-img button {
+    /* margin-top: 0px; */
+    margin-right: 50px;
+    border: none;
+    background-color: white;
+    font-family: var(--font);
+    font-weight: bolder;
+    cursor: pointer;
+    /* background-color: aqua; */
+    max-width: 40px;
+}
+
+.health-texto-img {
+    display: flex;
+    justify-content:space-between;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.432);
+    height: 80px;
+    width: 200px;
+    border-radius: 15px;
+}
+
+.health-img {
+    background-image: var(--img-salud);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 90%;
+    margin-top: 3px;
+}
+
+.health-texto button {
+    margin-top: 20px;
+    /* margin-left: 10px; */
+    border: none;
+    background-color: white;
+    font-family: var(--font);
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.life-travel {
+    display: flex;
+    justify-content: space-between;
+    max-width: 580px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.life-texto-img {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.432);
+    height: 80px;
+    width: 200px;
+    border-radius: 15px;
+}
+
+.life-img {
+    /* background-color: aqua; */
+    background-image: var(--img-life);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    width: 50%;
+    height:100%;
+    }
+
+.life-texto-img button {
+    /* margin-top: 0px; */
+    margin-right: 50px;
+    border: none;
+    background-color: white;
+    font-family: var(--font);
+    font-weight: bolder;
+    cursor: pointer;
+    /* background-color: aqua; */
+    max-width: 40px;
+}
+
+.travel-texto-img {
+    display: flex;
+    justify-content:space-between;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.432);
+    height: 80px;
+    width: 200px;
+    border-radius: 15px;
+}
+
+.travel-img {
+    background-image: var(--img-travel);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 90%;
+    margin-top: 3px;
+}
+
+.travel-texto button {
+    margin-top: 20px;
+    /* margin-left: 10px; */
+    border: none;
+    background-color: white;
+    font-family: var(--font);
+    font-weight: bolder;
+    cursor: pointer;
+}
